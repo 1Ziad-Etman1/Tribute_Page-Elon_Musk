@@ -1,0 +1,17 @@
+.footer {
+    background: rgba(3, 3, 3, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    div b{
+        font-size: 1.25em;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}

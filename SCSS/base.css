@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background: url("/images/Elon_Musk4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.header {
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+.header .title {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px rgb(50, 83, 94);
+}
+.header .description {
+  font-size: 1.8rem;
+  text-shadow: 0.5px 0.5px 2px rgb(50, 83, 94);
+}
+
+.tribute {
+  max-width: 77rem;
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(15, 15, 15);
+  border: 0.2px solid rgb(53, 28, 28);
+  border-radius: 10px;
+  box-shadow: 4px 5px 6px rgb(87, 87, 87);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+}
+.tribute .quote {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(15, 15, 15);
+}
+.tribute .circle {
+  justify-self: self-end;
+  align-self: center;
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0px;
+  box-shadow: 4px 3px 4px rgb(87, 87, 87);
+}
+.tribute .circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tribute2 {
+  max-width: 77rem;
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(15, 15, 15);
+  border: 0.2px solid rgb(53, 28, 28);
+  border-radius: 10px;
+  box-shadow: 4px 5px 6px rgb(87, 87, 87);
+  text-align: center;
+  font-size: 2.4rem;
+  align-items: center;
+}
+.tribute2 .content b {
+  font-size: 1.5em;
+}
+
+.tribute3 {
+  max-width: 77rem;
+  margin: 20px auto;
+  padding: 20px;
+  color: rgb(15, 15, 15);
+  border: 0.2px solid rgb(53, 28, 28);
+  border-radius: 10px;
+  box-shadow: 4px 5px 6px rgb(87, 87, 87);
+  text-align: left;
+  font-size: 2rem;
+  align-items: center;
+}
+.tribute3 .content .title {
+  text-align: center;
+  font-size: 1.2em;
+}
+.tribute3 .content ul {
+  padding-left: 30px;
+  margin-left: 15px;
+}
+
+.footer {
+  background: rgba(3, 3, 3, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.footer div b {
+  font-size: 1.25em;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.hide {
+  opacity: 0;
+  filter: blur(1px);
+  transition: all 1.5s;
+}
+
+.hidee {
+  opacity: 0;
+  filter: blur(1px);
+  transition: all 1.5s;
+}
+
+.hideR {
+  transform: translateX(40%);
+  opacity: 0;
+  filter: blur(1px);
+  transition: all 1.5s;
+}
+
+.hideL {
+  transform: translateX(-40%);
+  opacity: 0;
+  filter: blur(1px);
+  transition: all 1.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}/*# sourceMappingURL=base.css.map */

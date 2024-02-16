@@ -1,0 +1,62 @@
+@mixin trib(){
+    max-width: 77rem;
+    margin: 20px auto;
+    padding: 20px;
+    color: rgb(15, 15, 15);
+    border: 0.2px solid rgb(53, 28, 28);
+    border-radius: 10px;
+    box-shadow: 4px 5px 6px rgb(87, 87, 87);
+}
+.tribute{
+    @include trib();
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    .quote{
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(15, 15, 15);
+    }
+    .circle{
+        justify-self: self-end;
+        align-self: center;
+        width: 80%; 
+        height: 100%;
+        border-radius: 50%; 
+        overflow: hidden; 
+        border: 0px;
+        box-shadow: 4px 3px 4px rgb(87, 87, 87);
+        img{
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.tribute2{
+    @include trib();
+    text-align: center;
+    font-size: 2.4rem;
+    align-items: center;
+    .content b{
+        font-size: 1.5em;
+    }
+}
+
+.tribute3{
+    @include trib();
+    text-align: left;
+    font-size: 2.0rem;
+    align-items: center;
+    .content{
+        .title{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        ul{
+            padding-left: 30px;
+            margin-left: 15px;
+        }
+    }
+}
